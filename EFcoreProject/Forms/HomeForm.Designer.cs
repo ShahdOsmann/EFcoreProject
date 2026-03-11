@@ -31,11 +31,15 @@
             btnStudents = new Button();
             btnCourses = new Button();
             label1 = new Label();
+            btnInstuctor = new Button();
+            btnDepartments = new Button();
+            btnCourseSessions = new Button();
+            btnCourseSessionAttendence = new Button();
             SuspendLayout();
             // 
             // btnStudents
             // 
-            btnStudents.Location = new Point(268, 262);
+            btnStudents.Location = new Point(37, 278);
             btnStudents.Name = "btnStudents";
             btnStudents.Size = new Size(216, 94);
             btnStudents.TabIndex = 0;
@@ -45,7 +49,7 @@
             // 
             // btnCourses
             // 
-            btnCourses.Location = new Point(268, 134);
+            btnCourses.Location = new Point(37, 139);
             btnCourses.Name = "btnCourses";
             btnCourses.Size = new Size(216, 103);
             btnCourses.TabIndex = 1;
@@ -62,11 +66,55 @@
             label1.TabIndex = 2;
             label1.Text = "Home Page";
             // 
+            // btnInstuctor
+            // 
+            btnInstuctor.Location = new Point(292, 139);
+            btnInstuctor.Name = "btnInstuctor";
+            btnInstuctor.Size = new Size(216, 103);
+            btnInstuctor.TabIndex = 3;
+            btnInstuctor.Text = "Instructor Form";
+            btnInstuctor.UseVisualStyleBackColor = true;
+            btnInstuctor.Click += btnInstuctor_Click;
+            // 
+            // btnDepartments
+            // 
+            btnDepartments.Location = new Point(292, 269);
+            btnDepartments.Name = "btnDepartments";
+            btnDepartments.Size = new Size(216, 103);
+            btnDepartments.TabIndex = 4;
+            btnDepartments.Text = "Department Form";
+            btnDepartments.UseVisualStyleBackColor = true;
+            btnDepartments.Click += btnDepartments_Click;
+            // 
+            // btnCourseSessions
+            // 
+            btnCourseSessions.Location = new Point(545, 139);
+            btnCourseSessions.Name = "btnCourseSessions";
+            btnCourseSessions.Size = new Size(216, 103);
+            btnCourseSessions.TabIndex = 5;
+            btnCourseSessions.Text = "CourseSession Form";
+            btnCourseSessions.UseVisualStyleBackColor = true;
+            btnCourseSessions.Click += btnCourseSessions_Click;
+            // 
+            // btnCourseSessionAttendence
+            // 
+            btnCourseSessionAttendence.Location = new Point(545, 269);
+            btnCourseSessionAttendence.Name = "btnCourseSessionAttendence";
+            btnCourseSessionAttendence.Size = new Size(216, 103);
+            btnCourseSessionAttendence.TabIndex = 6;
+            btnCourseSessionAttendence.Text = "CourseSessionAttendence Form";
+            btnCourseSessionAttendence.UseVisualStyleBackColor = true;
+            btnCourseSessionAttendence.Click += btnCourseSessionAttendence_Click;
+            // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCourseSessionAttendence);
+            Controls.Add(btnCourseSessions);
+            Controls.Add(btnDepartments);
+            Controls.Add(btnInstuctor);
             Controls.Add(label1);
             Controls.Add(btnCourses);
             Controls.Add(btnStudents);
@@ -82,5 +130,9 @@
         private Button btnStudents;
         private Button btnCourses;
         private Label label1;
+        private Button btnInstuctor;
+        private Button btnDepartments;
+        private Button btnCourseSessions;
+        private Button btnCourseSessionAttendence;
     }
 }
